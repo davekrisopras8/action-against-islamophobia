@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAI - Privacy</title>
+  <link rel="stylesheet" href="../../../sass/main.scss">
+  <link rel="shortcut icon" type="image/png" href="../../../assets/icons/logo-aai-white.png">
+</head>
+<body>
+  <!-- Header Start -->
+  <header class="header">
+    <div class="navigation">
+      <nav class="navigation__top">
+        <div class="navigation__left">
+          <a href="../../../index.html" class="navigation__brand-text">Combating Islamophobia in Australia</a>
+        </div>
+        <div class="navigation__mid">
+          <a class="navigation__list-item">Empowerment</a>
+          <span class="navigation__divider">|</span>
+          <a class="navigation__list-item">Advocacy</a>
+          <span class="navigation__divider">|</span>
+          <a class="navigation__list-item">Justice</a>
+        </div>
+        <div class="navigation__right">
+          <div class="navigation__icons">
+            <a href="./faq.html" class="navigation__icon-link">
+              <span class="navigation__icon-faq"><img src="../../../assets/icons/faq-white.svg" alt="FAQ Logo"></span>
+              <span><a href="./src/js/views/faq.html">FAQs</a></span>
+            </a>
+            <a href="./contact-us.html" class="navigation__icon-link">
+              <span class="navigation__icon-contact"><img src="../../../assets/icons/email-white.svg" alt="Contact us Logo"></span>
+              <span>Contact us</span>
+            </a>
+            <div class="navigation__social">
+              <a href="https://www.facebook.com/actionagainstislamophobia"><img src="../../../assets/icons/fb-icon-white.svg" alt="Facebook"></a>
+              <a href="https://www.instagram.com/actionagainstislamophobia/"><img src="../../../assets/icons/instagram-white.svg" alt="Instagram"></a>
+              <a href="https://www.tiktok.com/@action.against.is"><img src="../../../assets/icons/tiktok-white.svg" alt="Tiktok"></a>
+              <a href="https://www.linkedin.com/company/action-against-islamophobia/"><img src="../../../assets/icons/linkedin-icon.svg" alt="Linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="navigation__main">
+        <div class="navigation__main-left">
+          <a href="../../../index.html" class="navigation__logo">
+            <img src="../../../assets/icons/logo-aai-white.png" alt="AAI Logo">
+          </a>
+          <h6 class="navigation__text-responsive">Action Against Islamophobia</h6>
+        </div>
+        <div class="navigation__main-mid">
+          <nav class="navigation__bottom">
+            <a href="./about.html" class="navigation__link">About Us<span>+</span></a>
+            <div class="dropdown">
+              <ul class="dropdown__menu">
+                <li class="dropdown__item"><a href="./about.html" class="dropdown__link">Who Are We?</a></li>
+                <li class="dropdown__item"><a href="./about.html" class="dropdown__link">What is Islamophobia?</a></li>
+                <li class="dropdown__item"><a href="./about.html" class="dropdown__link">Islam is not a race</a></li>
+                <li class="dropdown__item"><a href="./about.html" class="dropdown__link">What is an Islamophobic incident?</a></li>
+                <li class="dropdown__item"><a href="./about.html" class="dropdown__link">Why is it important to report Islamophobia?</a></li>
+                <li class="dropdown__item"><a href="./about.html" class="dropdown__link">How Does AAI respond to these incidents?</a></li>
+                <li class="dropdown__item"><a href="./about.html" class="dropdown__link">Advocacy, Justice and Empowerment</a></li>
+              </ul>
+            </div>
+            <a href="./crisis-line.html" class="navigation__link">Services</a>
+            <a href="./news.html" class="navigation__link">News</a>
+            <a href="./resources.html" class="navigation__link">Resources</a>
+            <a href="./get-involved.html" class="navigation__link">Get Involved</a>
+          </nav>
+        </div>
+        <div class="navigation__main-right">
+          <a href="./report.html" class="navigation__button">
+            <span class="navigation__button-icon"><img src="../../../assets/icons/warning-icon-white.svg" alt="Warning"></span>
+            <span>Report an Incident</span>
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" aria-label="Toggle menu">
+          <span class="hamburger-menu__line"></span>
+          <span class="hamburger-menu__line"></span>
+          <span class="hamburger-menu__line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+          <div class="mobile-menu__header">
+            <div class="mobile-menu__top">
+              <div class="mobile-menu__branding">
+                <a href="../../../index.html" class="mobile-menu__logo">
+                  <img src="./assets/icons/logo-aai-white.png" alt="AAI Logo">
+                </a>
+                <div class="mobile-menu__title">
+                  <span>Action Against</span>
+                  <span>Islamophobia</span>
+                </div>
+              </div>
+              <button class="mobile-menu__close" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="mobile-menu__tagline">
+              <span>Empowerment</span>
+              <span class="mobile-menu__divider">|</span>
+              <span>Advocacy</span>
+              <span class="mobile-menu__divider">|</span>
+              <span>Justice</span>
+            </div>
+          </div>
+
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="./about.html" class="mobile-menu__link">About Us</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./crisis-line.html" class="mobile-menu__link">Services</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./resources.html" class="mobile-menu__link">Resources</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./news.html" class="mobile-menu__link">News and Events</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./get-involved.html" class="mobile-menu__link">Get Involved</a>
+              </li>
+            </ul>
+
+            <div class="mobile-menu__action">
+              <a href="./report.html" class="mobile-menu__button">
+                <img src="../../../assets/icons/warning-icon-white.svg" alt="">
+                <span>Report an Incident</span>
+              </a>
+            </div>
+
+            <div class="mobile-menu__footer">
+              <div class="mobile-menu__links">
+                <a href="./faq.html" class="mobile-menu__footer-link">
+                  <img src="../../../assets/icons/faq-black.svg" alt="FAQ">
+                  <span>FAQs</span>
+                </a>
+                <a href="./contact-us.html" class="mobile-menu__footer-link">
+                  <img src="../../../assets/icons/contact.png" alt="Contact">
+                  <span>Contact us</span>
+                </a>
+              </div>
+
+              <div class="mobile-menu__social">
+                <a href="https://www.facebook.com/actionagainstislamophobia" aria-label="Facebook">
+                  <img src="../../../assets/icons/fb-icon-black.svg" alt="Facebook">
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/actionagainstislamophobia/" aria-label="Instagram">
+                  <img src="../../../assets/icons/instagram-icon-black.svg" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@action.against.is" aria-label="TikTok">
+                  <img src="../../../assets/icons/tiktok-icon-black.svg" alt="Tiktok">
+                </a>
+                <a href="https://www.linkedin.com/company/action-against-islamophobia/" aria-label="Twitter">
+                  <img src="../../../assets/icons/twitter-icon-black.svg" alt="Twitter">
+                </a>
+                <a href="https://www.youtube.com/channel/actionagainstislamophobia" aria-label="YouTube">
+                  <img src="../../../assets/icons/youtube-icon-black.svg" alt="Youtube">
+                </a>
+              </div>
+            </div>
+          </nav>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Hero Secondary Section Start -->
+  <div class="hero-secondary">
+    <div class="hero-secondary__container">
+      <div class="hero-secondary__content">
+        <p class="hero-secondary__subtitle">Protecting Your Information</p>
+        <h1 class="hero-secondary__title">
+          <span class="hero-secondary__title-line">Privacy Policy</span>
+        </h1>
+      </div>
+      <div class="hero-secondary__shape">
+        <img src="../../../assets/icons/bars-right.png" alt="Decorative shape">
+      </div>
+    </div>
+  </div>
+  <!-- Hero Secondary Section End -->
+
+  <div class="privacy-page">
+    <main class="privacy">
+      <nav class="breadcrumb">
+        <a href="../../../index.html" class="breadcrumb__link">Home</a>
+        <span class="breadcrumb__separator">
+          <img src="../../../assets/icons/chevron-right.svg" alt="arrow-right">
+        </span>
+        <span class="breadcrumb__current">Privacy Policy</span>
+      </nav>
+      <div class="privacy__header">
+        <h1 class="privacy__header-title">Action Against Islamophobia</h1>
+        <p>
+          Action Against Islamophobia is committed to providing quality services to you and this policy outlines our ongoing obligations to you in respect of how we manage your Personal Information. We have adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The APPs govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information. A copy of the Australian Privacy Principles may be obtained from the website of The Office of the Australian Information Commissioner.
+        </p>
+      </div>
+
+      <div class="accordion">
+        <!-- Section 1 - Open by default -->
+        <div class="accordion__item accordion__item--active">
+          <div class="accordion__header">
+            <h2 class="accordion__question">What is Personal Information and why do we collect it?</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--minus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p><strong>Personal Information</strong> is information or an opinion that identifies an individual. Examples of Personal Information we collect include:</p>
+            <ul>
+              <li>Email Address</li>
+              <li>Name</li>
+              <li>Postal Address</li>
+              <li>Postal Code</li>
+              <li>Telephone Number</li>
+              <li>Organisation Name</li>
+              <li>Credit Card Information, Bank, or Billing Information (Only if applicable)</li>
+            </ul>
+
+            <p>This Personal Information is obtained in many ways including:</p>
+            <ul>
+              <li>Interviews</li>
+              <li>Correspondence by telephone, facsimile, and email</li>
+              <li>From our website: <a href="https://actionagainstislamophobia.org.au/" target="_blank">https://actionagainstislamophobia.org.au/</a></li>
+              <li>From external sources such as your website, media, and publications</li>
+              <li>From other publicly available sources</li>
+              <li>Cookies</li>
+              <li>Other applicable sources</li>
+            </ul>
+
+            <p>We don't guarantee website links or the policies of authorized third parties. We collect your Personal Information for the primary purpose of providing our services to you. When we collect Personal Information, we will, where appropriate and possible, explain why we are collecting the information and how we plan to use it.</p>
+
+            <p><strong>Information Collected includes:</strong></p>
+            <ul>
+              <li>Your personal details to inform you about our services or products as per your request</li>
+              <li>Administrative purposes, including updating you about any changes to our services or policies and creating a profile of your interests and preferences</li>
+              <li>You may unsubscribe from our mailing/marketing lists at any time by contacting us in writing</li>
+              <li><strong>Log and Usage Data:</strong> This data consists of service-related, diagnostic, usage, and performance information that our servers automatically collect when you access or use our Services, stored in log files. Depending on your interactions, this data may include:
+                <ul class="nested-list">
+                  <li>Your IP address</li>
+                  <li>Device information</li>
+                  <li>Browser type</li>
+                  <li>Settings</li>
+                  <li>Details about your activity within the Services (e.g., timestamps, pages and files viewed, searches, and actions)</li>
+                  <li>Device event information such as system activity, error reports (often referred to as "crash dumps"), and hardware settings</li>
+                </ul>
+              </li>
+              <li><strong>Device Data:</strong> We collect information about the devices you use to access our Services, including computers, phones, tablets, or other devices. This data may include:
+                <ul class="nested-list">
+                  <li>IP address (or proxy server)</li>
+                  <li>Device and application identification numbers</li>
+                  <li>Location</li>
+                  <li>Browser type</li>
+                  <li>Hardware model</li>
+                  <li>Internet service provider or mobile carrier</li>
+                  <li>Operating system and system configuration information</li>
+                </ul>
+              </li>
+            </ul>
+
+            <p>We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, and technical information. This information is primarily needed to maintain the security and operation of our Services and for internal analytics and reporting purposes.</p>
+
+            <p>For information regarding Credit Card Information, Bank, or Billing Information, any use of this information, Action Against Islamophobia enters your financial data directly into the payment service provider <a href="#" class="highlight">eWay</a> and does not store any details of your credit/debit card on its system. We will ask you to indicate your consent in allowing us to use it.</p>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Sensitive Information</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>Sensitive information is defined in the Privacy Act to include information or opinion about such things as an individual's racial or ethnic origin, political opinions, membership of a political association, religious or philosophical beliefs, membership of a trade union or other professional body, criminal record or health information.</p>
+            <p>Sensitive information will be used by us only:</p>
+            <ul>
+              <li>For the primary purpose for which it was obtained</li>
+              <li>For a secondary purpose that is directly related to the primary purpose</li>
+              <li>With your consent; or where required or authorised by law</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Is my personal information shared with others?</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>
+              Your personal information is kept strictly confidential. AAI only shares anonymized data for statistical and advocacy purposes. We never share your personal details without your explicit consent.
+            </p>
+          </div>
+        </div> -->
+
+        <!-- Section 3 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Third Parties</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>Where reasonable and practicable to do so, we will collect your Personal Information only from you. However, in some circumstances we may be provided with information by third parties. In such a case we will take reasonable steps to ensure that you are made aware of the information provided to us by the third party.</p>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Links to Third Parties</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>Our website may contain links to other websites. These links are meant for your convenience only. Links to third party websites do not constitute sponsorship or endorsement or approval of these websites. Please be aware that we are not responsible for the privacy practices of such other websites. We encourage our users to be aware, when they leave our website, to read the privacy statements of each and every website that collects personally identifiable information.</p>
+          </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Sharing Information</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>We may disclose your Personal Information to our service providers, contractors, and other third parties we use to support our organization and who are bound by contractual obligations to keep Personal Information confidential and use it only for the purposes for which we disclose it to them.</p>
+          </div>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Cookies</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>We use "cookies" to collect information about you and your activity across our site. A cookie is a small piece of data that our website stores on your computer, and accesses each time you visit, so we can understand how you use our site. This helps us serve you content based on preferences you have specified.</p>
+          </div>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Disclosure of Personal Information</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>Your Personal Information may be disclosed in a number of circumstances including the following:</p>
+            <ul>
+              <li>Third parties where you consent to the use or disclosure; and</li>
+              <li>Where required or authorised by law.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Security of Personal Information</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>Your Personal Information is stored in a manner that reasonably protects it from misuse and loss and from unauthorized access, modification or disclosure.</p>
+            <p>When your Personal Information is no longer needed for the purpose for which it was obtained, we will take reasonable steps to destroy or permanently de-identify your Personal Information. However, most of the Personal Information is or will be stored in client files which will be kept by us for a minimum of 7 years.</p>
+          </div>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Access to your Personal Information</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>You may access the Personal Information we hold about you and to update and/or correct it, subject to certain exceptions. If you wish to access your Personal Information, please contact us in writing.</p>
+            <p>Action Against Islamophobia will not charge any fee for your access request, but may charge an administrative fee for providing a copy of your Personal Information.</p>
+            <p>In order to protect your Personal Information we may require identification from you before releasing the requested information.</p>
+          </div>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Google Analytics</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>We use Google Analytics to collect information about you and your activity across our site. Google Analytics is a web analysis service provided by Google that tracks and reports on website traffic. Google uses the data collected to track and monitor the use of our website. This data is shared with other Google services.</p>
+            <p>Google may use the collected data to contextualize and personalize the ads of its own advertising network. For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+          </div>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Maintaining the Quality of your Personal Information</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>It is an important to us that your Personal Information is up to date. We will take reasonable steps to make sure that your Personal Information is accurate, complete and up-to-date. If you find that the information we have is not up to date or is inaccurate, please advise us as soon as practicable so we can update our records and ensure we can continue to provide quality services to you.</p>
+          </div>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Policy Updates</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>This Policy may change from time to time and is available on our website.</p>
+          </div>
+        </div>
+
+        <!-- Section 13 -->
+        <div class="accordion__item">
+          <div class="accordion__header">
+            <h2 class="accordion__question">Privacy Policy Complaints and Enquiries</h2>
+            <button class="accordion__toggle">
+              <span class="accordion__icon accordion__icon--plus"></span>
+            </button>
+          </div>
+          <div class="accordion__content">
+            <p>If you have any queries or complaints about our Privacy Policy please contact us at:</p>
+            <p>
+              <strong>Action Against Islamophobia</strong><br>
+              Email: privacy@actionagainstislamophobia.org.au<br>
+              Phone: (02) 8377 4199
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- CTA Section Start -->
+  <section class="CTA-page">
+      <div class="CTA-page__container">
+        <div class="CTA-page__content">
+          <div class="CTA-page__text-content">
+            <h2 class="CTA-page__heading">Keep up to date with our fight against Islamophobia, extremism and hate.</h2>
+
+            <form class="CTA-page__form">
+              <div class="CTA-page__form-group">
+                <input type="email" class="CTA-page__input" placeholder="Email address" required>
+                <input type="text" class="CTA-page__input" placeholder="Post code">
+                <button type="submit" class="CTA-page__submit">Submit</button>
+              </div>
+            </form>
+
+            <p class="CTA-page__disclaimer">
+              AAI will keep all information private and only use as part of AAI’s newsletter and latest information.
+            </p>
+          </div>
+
+          <div class="CTA-page__image">
+            <img src="../../../assets/images/man-smile.png" alt="Person celebrating with raised arms">
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- CTA Section End -->
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <!-- Logo and Social Media -->
+        <div class="footer__branding">
+          <div class="footer__logo">
+            <a href="../../../index.html"><img src="../../../assets/icons/logo-aai-white.png" alt="Action Against Islamophobia Logo"></a>
+            <div class="footer__logo-text">
+              <a href="../../../index.html">Action Against</a>
+              <a href="../../../index.html">Islamophobia</a>
+            </div>
+          </div>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/actionagainstislamophobia"><img src="../../../assets/icons/fb-icon-white.svg" alt="Facebook" class="footer__social-icon"></a>
+            <a href="https://www.instagram.com/actionagainstislamophobia/"><img src="../../../assets/icons/instagram-white.svg" alt="Instagram" class="footer__social-icon"></a>
+            <a href="https://www.tiktok.com/@action.against.is"><img src="../../../assets/icons/tiktok-white.svg" alt="Tiktok" class="footer__social-icon"></a>
+            <a href="https://www.linkedin.com/company/action-against-islamophobia/"><img src="../../../assets/icons/linkedin-icon.svg" alt="Linkedin" class="footer__social-icon"></a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer__navigation">
+          <div class="footer__column">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="./about.html" class="footer__link">About Us</a></li>
+              <li class="footer__item"><a href="./about.html" class="footer__link">What is islamophobia?</a></li>
+              <li class="footer__item"><a href="./about.html" class="footer__link">What is an "Anti-Muslim" incident?</a></li>
+              <li class="footer__item"><a href="./about.html" class="footer__link">How does AAI respond?</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="./crisis-line.html" class="footer__link">Services</a></li>
+              <li class="footer__item"><a href="./crisis-line.html" class="footer__link">Crisis line</a></li>
+              <li class="footer__item"><a href="./counselling.html" class="footer__link">Counselling services</a></li>
+              <li class="footer__item"><a href="./legal-services.html" class="footer__link">Legal services</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="./report.html" class="footer__link">Submit a Report</a></li>
+              <li class="footer__item"><a href="./news.html" class="footer__link">News</a></li>
+              <li class="footer__item"><a href="./faq.html" class="footer__link">FAQs</a></li>
+              <li class="footer__item"><a href="./contact-us.html" class="footer__link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link">
+                <img src="../../../assets/images/ANIC-australian-logo.png" alt="ANIC-australian-logo">
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <p class="footer__text">Action Against Islamophobia (AAI) acknowledges the Traditional Owners and Custodians of the lands on which we work and pay our respects to Indigenous Elders past, present and emerging.
+        </p>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__links">
+          <ul class="footer__bottom-list">
+            <li class="footer__bottom-item"><a class="footer__bottom-link">Copyright 2024 (c)</a></li>
+            <li class="footer__bottom-item"><a href="./privacy.html" class="footer__bottom-link footer__privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+</body>
+</html>

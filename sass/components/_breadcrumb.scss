@@ -1,0 +1,43 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: toRem(64);
+  flex-wrap: wrap;
+
+  @media (max-width: toRem(768)) {
+    margin-bottom: toRem(32);
+  }
+
+  &__link {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: toRem(16);
+    line-height: 1.6;
+    color: $dark-80;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__separator {
+    margin: 0 toRem(16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: toRem(576)){
+      margin: 0 0;
+    }
+  }
+
+  &__current {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: toRem(16);
+    line-height: 1.6;
+    color: $sherwood-orange-70;
+  }
+}

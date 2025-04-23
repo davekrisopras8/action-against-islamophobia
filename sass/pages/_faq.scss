@@ -1,0 +1,157 @@
+.faq-section{
+  padding-top: toRem(120);
+  padding-bottom: toRem(60);
+  padding-left: toVw(120);
+  padding-right: toVw(120);
+
+  @media (max-width: toRem(768)){
+    padding-top: toRem(80);
+    padding-bottom: toRem(40);
+  }
+
+
+  @media (max-width: toRem(1200)) {
+    padding-left: toVw(60);
+    padding-right: toVw(60);
+  }
+}
+
+.faq {
+  max-width: toRem(1200);
+  margin: 0 auto;
+
+  &__title {
+    font-family: $font-secondary;
+    font-size: toRem(56);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: toRem(15);
+    color: $dark-100;
+    max-width: toRem(800);
+
+    @media (max-width: toRem(992)){
+      font-size: toRem(34);
+    }
+  }
+
+  &__intro {
+    font-size: toRem(18);
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: $font-primary;
+    margin-bottom: toRem(25);
+    max-width: toRem(800);
+    color: $dark-80;
+  }
+}
+
+// Accordion
+.accordion {
+  margin-top: toRem(64);
+
+  &__item {
+    border-top: 1px solid $dark-30;
+    border-bottom: 1px solid $dark-30;
+    padding: toRem(32) 0 toRem(32) 0;
+
+    @media (max-width: toRem(768)){
+      padding: toRem(24) 0 toRem(24) 0;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $dark-30;;
+    }
+
+    &--active {
+      .accordion__content {
+        display: block;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: toRem(16);
+    padding: toRem(15) 0;
+    cursor: pointer;
+
+    @media (max-width: toRem(768)) {
+      padding: 0;
+    }
+  }
+
+  &__question {
+    font-family: $font-secondary;
+    line-height: 1.1;
+    font-size: toRem(24);
+    font-weight: 400;
+    color: $dark-100;
+
+    @media (max-width: toRem(992)){
+      font-size: toRem(20);
+    }
+  }
+
+  &__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: toRem(30);
+    height: toRem(30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  &__icon {
+    width: toRem(30);
+    height: toRem(30);
+    background-color: $sherwood-orange-70;
+    position: relative;
+
+    &--plus, &--minus {
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+      }
+
+      &::before {
+        width: toRem(14);
+        height: toRem(2);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--plus {
+      &::after {
+        width: toRem(2);
+        height: toRem(14);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 0 0 toRem(15);
+    color: $color-base;
+    line-height: 1.7;
+
+    p {
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: toRem(16);
+      line-height: 1.6;
+      color: $dark-80;
+      max-width: toRem(1110);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.sidebar {
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    background-color: $dark-10;
+    padding: toRem(12) toRem(24);
+    text-decoration: none;
+    color: $dark-80;
+    margin-bottom: toRem(5);
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu';
+    font-size: toRem(16);
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: toRem(16);
+
+    &:hover {
+      border: 1px solid $sherwood-orange-70;
+      color: $sherwood-orange-70;
+      font-weight: 500;
+    }
+
+    &--active {
+      border: 1px solid $sherwood-orange-70;
+      color: $sherwood-orange-70;
+      font-weight: 500;
+    }
+  }
+}

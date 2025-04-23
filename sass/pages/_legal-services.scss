@@ -1,0 +1,156 @@
+.legal-services {
+  padding-top: toRem(120);
+  padding-bottom: toRem(60);
+  padding-left: toVw(120);
+  padding-right: toVw(120);
+
+  @media (max-width: toRem(768)){
+    padding-top: toRem(80);
+    padding-bottom: toRem(40);
+  }
+
+  @media (max-width: toRem(1200)) {
+    padding-left: toVw(60);
+    padding-right: toVw(60);
+  }
+}
+
+// Services Section
+.legal {
+  max-width: toRem(1200);
+  margin: 0 auto;
+  &__title {
+    font-family: $font-secondary;
+    font-size: toRem(56);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: toRem(64);
+    color: $dark-100;
+    max-width: toRem(770);
+
+    @media (max-width: toRem(992)) {
+      font-size: toRem(34);
+    }
+
+    @media (max-width: toRem(768)) {
+      margin-bottom: toRem(32);
+    }
+  }
+
+  &__layout {
+    display: grid;
+    grid-template-columns: toRem(459) 1fr;
+    gap: toRem(64);
+
+    @media (max-width: toRem(1300)){
+      grid-template-columns: toRem(400) 1fr;
+      gap: toRem(32);
+    }
+
+    @media (max-width: toRem(1100)){
+      grid-template-columns: toRem(300) 1fr;
+    }
+
+    @media (max-width: toRem(992)){
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__description {
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: toRem(16);
+    line-height: 1.6;
+    color: $dark-80;
+    margin-bottom: toRem(16);
+  }
+
+  &__subtitle {
+    font-family: $font-secondary;
+    font-size: toRem(32);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: toRem(40);
+    color: $dark-100;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Partners
+.legal-partners {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: toRem(576)){
+    grid-template-columns: 1fr;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: toRem(32);
+    padding-bottom: toRem(32);
+    border: 1px solid $dark-30;
+
+  }
+
+  &__logo {
+    width: toRem(80);
+    height: toRem(80);
+    margin-bottom: toRem(15);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__name {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: toRem(24);
+    line-height: 1.1;
+    margin-bottom: toRem(8);
+    color: $dark-100;
+
+    @media (max-width: toRem(576)){
+      font-size: toRem(20);
+    }
+  }
+
+  &__website {
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: toRem(16);
+    color: $dark-100;
+  }
+
+  &__phone {
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: toRem(16);
+    color: $dark-100;
+  }
+
+  &__rounded {
+    position: absolute;
+    top: toRem(220);
+    left: toRem(315);
+    img{
+      width: toRem(48);
+    }
+  }
+}

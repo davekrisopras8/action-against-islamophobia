@@ -1,0 +1,151 @@
+.privacy-page {
+  padding-top: toRem(120);
+  padding-bottom: toRem(60);
+  padding-left: toVw(120);
+  padding-right: toVw(120);
+
+  @media (max-width: toRem(768)){
+    padding-top: toRem(80);
+    padding-bottom: toRem(40);
+  }
+
+  @media (max-width: toRem(1200)) {
+    padding-left: toVw(60);
+    padding-right: toVw(60);
+  }
+}
+
+// Privacy Policy
+.privacy {
+  max-width: toRem(1200);
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    gap: toRem(24);
+
+    @media (max-width: toRem(992)){
+      flex-direction: column;
+    }
+
+    @media (max-width: toRem(992)){
+      gap: toRem(16);
+    }
+
+    &-title {
+      font-family: $font-secondary;
+      font-size: toRem(32);
+      font-weight: 400;
+      color: $sherwood-orange-70;
+      line-height: 1.25;
+      display: flex;
+      flex: none;
+      width: 50%;
+
+      @media (max-width: toRem(992)){
+        width: 100%;
+        font-size: toRem(24);
+      }
+    }
+
+    p {
+      font-size: toRem(16);
+      font-weight: 400;
+      font-family: $font-primary;
+      line-height: 1.5;
+      color: $dark-80;
+    }
+  }
+}
+
+// Accordion
+.accordion {
+  @media (max-width: toRem(992)){
+    margin-top: toRem(34);
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    @media (max-width: toRem(768)) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-family: $font-secondary;
+    line-height: 1.1;
+    font-size: toRem(24);
+    font-weight: 400;
+    color: $dark-100;
+  }
+    &__item {
+
+      &--active {
+        .accordion__content {
+          display: block;
+        }
+      }
+    }
+
+    &__content {
+      padding: 1.5rem 0;
+
+      p {
+        font-size: toRem(16);
+        line-height: 1.7;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      strong {
+        font-weight: 600;
+        color: $dark-100;
+      }
+
+      ul {
+        padding-left: toRem(32);
+        color: #6A7077;
+
+        li {
+          position: relative;
+          font-size: toRem(16);
+          font-weight: 400;
+          font-family: $font-primary;
+
+          &:nth-of-type(7) {
+            margin-bottom: toRem(16);
+          }
+        }
+
+        &.nested-list {
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+
+          li {
+            margin-bottom: 0.25rem;
+
+          }
+        }
+      }
+
+      a {
+        color: $sherwood-orange-70;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &.highlight {
+          font-weight: 500;
+        }
+      }
+    }
+}
+
