@@ -300,7 +300,7 @@ header{
   background-color: #fff5e0;
   z-index: 1000;
   transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -485,4 +485,8 @@ header{
       }
     }
   }
+}
+
+html:not(.loaded) .mobile-menu {
+  transition: none;
 }

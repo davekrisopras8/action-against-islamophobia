@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAI - Legal Services</title>
+  <title>AAI - Report</title>
   <link rel="stylesheet" href="./sass/main.scss">
   <link rel="shortcut icon" type="image/png" href="./assets/icons/logo-aai-white.png">
 </head>
@@ -179,9 +179,10 @@
   <div class="hero-secondary">
     <div class="hero-secondary__container">
       <div class="hero-secondary__content">
-        <p class="hero-secondary__subtitle">What we do for you and the community</p>
+        <p class="hero-secondary__subtitle">Your Voice Can Make a Difference</p>
         <h1 class="hero-secondary__title">
-          <span class="hero-secondary__title-line">Our Services</span>
+          <span class="hero-secondary__title-line">Report</span>
+          <span class="hero-secondary__title-line">Islamophobia</span>
         </h1>
       </div>
       <div class="hero-secondary__shape">
@@ -191,50 +192,164 @@
   </div>
   <!-- Hero Secondary Section End -->
 
-  <div class="legal-services">
-    <main class="legal">
+  <div class="incident-report">
+    <main class="report__pages">
       <nav class="breadcrumb">
         <a href="index.html" class="breadcrumb__link">Home</a>
         <span class="breadcrumb__separator">
           <img src="./assets/icons/chevron-right.svg" alt="chevron-right">
         </span>
-        <a href="crisis-line.html" class="breadcrumb__link">Our Services</a>
-        <span class="breadcrumb__separator">
-          <img src="./assets/icons/chevron-right.svg" alt="chevron-right">
-        </span>
-        <span class="breadcrumb__current">Legal Services</span>
+        <span class="breadcrumb__current">Report an Incident</span>
       </nav>
-      <h1 class="legal__title">The legal services that have partnered with AAI</h1>
 
-      <div class="legal__layout">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
-          <nav class="sidebar__nav">
-            <a href="crisis-line.html" class="sidebar__link sidebar__link">Crisis Line</a>
-            <a href="counselling.html" class="sidebar__link">Counselling Services</a>
-            <a href="legal-services.html" class="sidebar__link sidebar__link--active">Legal services</a>
-          </nav>
+      <h1 class="report__pages-title">Why Action Against Islamophobials needed in the community.</h1>
+
+      <p class="report__pages-intro">
+        If you have experienced or witnessed an incident of Islamophobia, extremism, bias, bigotry or hate, please report it using the incident form below. If this is an emergency, please dial 000.
+      </p>
+
+      <div class="report__pages-container">
+        <!-- Form Checklist Sidebar -->
+        <aside class="checklist">
+          <div class="checklist__header">Form Checklist</div>
+          <ul class="checklist__list">
+            <li class="checklist__item checklist__item--active">
+              <input type="checkbox" name="application-type" value="your details">
+              <!-- <span class="checklist__checkbox"></span> -->
+              Your details
+            </li>
+            <li class="checklist__item">
+              <input type="checkbox" name="application-type" value="incident details">
+              <!-- <span class="checklist__checkbox"></span> -->
+              Incident details
+            </li>
+            <li class="checklist__item">
+              <input type="checkbox" name="application-type" value="witnesses">
+              <!-- <span class="checklist__checkbox"></span> -->
+              Witnesses
+            </li>
+            <li class="checklist__item">
+              <input type="checkbox" name="application-type" value="suspects">
+              <!-- <span class="checklist__checkbox"></span> -->
+              Suspects
+            </li>
+            <li class="checklist__item">
+              <input type="checkbox" name="application-type" value="outcome">
+              <!-- <span class="checklist__checkbox"></span> -->
+              Outcome
+            </li>
+            <li class="checklist__item">
+              <input type="checkbox" name="application-type" value="review">
+              <!-- <span class="checklist__checkbox"></span> -->
+              Review
+            </li>
+          </ul>
         </aside>
 
-        <!-- Main Content -->
-        <div class="legal__content">
-          <div class="legal__description">
-            <p class="legal__paragraph">
-              Access to appropriate legal advice is essential in the pursuit of justice for victims of Islamophobic incidents. Action Against Islamophobia (AAI) has established referral pathways with local law firms and consultants who can provide legal support and advocacy.
-            </p>
+        <!-- Main Form Area -->
+        <div class="form-area">
+          <div class="form-area__header">
+            <div class="form-area__pattern">
+              <img src="./assets/icons/Bars 1.svg" alt="">
+            </div>
+            <h2 class="form-area__title">
+              Report The <span class="form-area__highlight">
+                Incident</span>
+                <div class="form-area__shape">
+                  <img src="./assets/icons/shape.png" alt="Shape">
+                </div>
+            </h2>
           </div>
 
-          <h2 class="legal__subtitle">Our legal service partners that have teamed up with Action Against Islamophobia.</h2>
+          <div class="form-area__tabs">
+            <div class="form-area__tab form-area__tab--active">Your Detail</div>
+            <div class="form-area__tab">Incident Details</div>
+            <div class="form-area__tab">Witnesses</div>
+            <div class="form-area__tab">Suspects</div>
+            <div class="form-area__tab">Outcome</div>
+            <div class="form-area__tab">Review</div>
+          </div>
 
-          <div class="legal-partners">
-            <!-- Partner 1 -->
-            <div class="legal-partners__card">
-              <h3 class="legal-partners__name">LawBridge Lawyers and Consultants</h3>
-              <a href="https://lawbridge.com.au/" class="legal-partners__website" target="_blank">https://lawbridge.com.au/</a>
-              <div class="legal-partners__phone">(02) 8366 8956</div>
+          <form class="form">
+            <div class="form__note">
+              The information marked with a (*) is required to submit the form. AAI won't share any information you give us without your permission.
             </div>
 
-            <!-- Additional partners can be added here -->
+            <div class="form__section">
+              <h3 class="form__section-title">Select incident type</h3>
+              <div class="form__checkbox-group">
+                <label class="form__checkbox">
+                  <input type="checkbox" name="incident-type" value="online" checked>
+                  <span class="form__checkbox-button"></span>
+                  Online Incident
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" name="incident-type" value="real-life">
+                  <span class="form__checkbox-button"></span>
+                  Real Life Incident
+                </label>
+              </div>
+            </div>
+
+            <div class="form__section">
+              <h3 class="form__section-title">Type of Application</h3>
+              <div class="form__checkbox-group">
+                <label class="form__checkbox">
+                  <input type="checkbox" name="application-type" value="contact" checked>
+                  <span class="form__checkbox-button"></span>
+                  Submitting with Contact Information
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" name="application-type" value="anonymous">
+                  <span class="form__checkbox-button"></span>
+                  Submitting as Anonymous (Skips the "details" section)
+                </label>
+              </div>
+            </div>
+
+            <div class="form__section-app">
+              <h3 class="form__section-title">Type of Application</h3>
+              <label class="form__checkbox">
+                <input type="checkbox" name="application-type" value="contact">
+                <span class="form__checkbox-button"></span>
+                <p class="form__info">
+                  By entering the following details, you give us permission to contact you to follow-up. Your details are strictly confidential and will not be shared with any third party without your consent.
+                </p>
+              </label>
+
+              <div class="form__field">
+                <input type="text" class="form__input" placeholder="Name *" required>
+              </div>
+
+              <div class="form__field">
+                <input type="text" class="form__input" placeholder="First Name *" required>
+              </div>
+
+              <div class="form__field">
+                <input type="text" class="form__input" placeholder="Last name *" required>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label">Preferred Method of Contact*</label>
+                <p class="form__help-text">If we need to contact you about this report, how would you prefer we do this?</p>
+
+                <div class="form__checkbox-group">
+                  <label class="form__checkbox">
+                    <input type="checkbox" name="contact-method" value="phone">
+                    <span class="form__checkbox-button"></span>
+                    Phone
+                  </label>
+                  <label class="form__checkbox">
+                    <input type="checkbox" name="contact-method" value="email">
+                    <span class="form__checkbox-button"></span>
+                    Email
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="form-area__actions">
+            <button type="button" class="form-area__actions-button">Process to The Next Step</button>
           </div>
         </div>
       </div>
@@ -345,5 +460,6 @@
     </div>
   </footer>
   <!-- Footer End -->
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
