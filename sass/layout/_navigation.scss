@@ -165,11 +165,30 @@ header{
     &__bottom {
       @include flex(row, center, center);
 
-      @media (max-width: toRem(1024)) {
-        display: grid;
-        grid-template-columns: 1fr max-content 1fr;
-        grid-template-rows: 1fr;
-      }
+      // @media (max-width: toRem(1024)) {
+      //   // display: grid;
+      //   // grid-template-columns: 1fr max-content 1fr;
+      //   // grid-template-rows: 1fr;
+      //   display: grid;
+      //   grid-template-columns: 1fr max-content 1fr;
+      //   grid-gap: toRem(16);
+      //   justify-content: center;
+      //   text-align: center;
+
+      //   a:nth-child(5) {
+      //     grid-column: 1;
+      //   }
+
+      //   a:nth-child(6) {
+      //     grid-column-start: 3;
+      //   }
+
+
+      //   a {
+      //     padding: toRem(10) 0;
+      //     width: 100%;
+      //   }
+      // }
 
     }
 
@@ -178,7 +197,6 @@ header{
       padding-right: toVw(20);
       font-weight: 500;
       position: relative;
-
 
       span {
         margin-left: toRem(5);
